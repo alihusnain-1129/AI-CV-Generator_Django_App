@@ -57,26 +57,14 @@ python manage.py runserver
 Visit http://127.0.0.1:8000 in your browser.
 
 **Usage**
+
 Paste your CV or experience text into the input form.
 Click Generate CV.
 View the generated CV in the template format.
 
 
-**Project Structure**
-ai-cv-generator/
-├── config/          # Django settings & project configuration
-├── core/            # Django app containing views, MCP integration
-│   ├── mcp/
-│   │   └── main.py  # MCP tool functions
-│   └── views.py
-├── templates/
-│   └── index.html
-├── .env             # LLM API key
-├── requirements.txt
-├── manage.py
-└── README.md
-
 **Notes**
+
 Ensure your MCP tool is configured correctly with your chosen LLM API.
 Output CV is generated in a single formatted template for easy download or copy.
 For large CVs, make sure your LLM usage fits within the token/credit limits.
